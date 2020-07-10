@@ -1,0 +1,53 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1594328155493' stop='1594328164146'>
+    <name>Client</name>
+    <title>Client</title>
+    <test-cases>
+        <test-case start='1594328155493' status='failed' stop='1594328164145'>
+            <name>Get title</name>
+            <title>Get title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.116'/>
+            </parameters>
+            <steps>
+                <step start='1594328155501' status='passed' stop='1594328161474'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='a6e7d15c-0c9c-47b9-b189-0be8d9d477fa-attachment.json' type='application/json' size='41'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594328161477' status='passed' stop='1594328161521'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Response' source='0d6b191f-51e8-4cba-8049-95a0ca762781-attachment.json' type='application/json' size='13'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594328163533' status='passed' stop='1594328164141'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='c21123c8-2905-48b7-804b-e5a2e05e4ae8-attachment.png' type='image/png' size='426807'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>'Connections' == ''</message>
+                <stack-trace>AssertionError [ERR_ASSERTION]: 'Connections' == ''
+                    at Context.&lt;anonymous> (C:\Project\Alluma\test\specs\/test.js:9:14)
+                    at Context.executeSync (C:\Project\Alluma\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Project\Alluma\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
