@@ -3,8 +3,8 @@ import exp from '../expected/footer.exp';
 import { assert } from 'chai';
 
 
-class Footer  { //extends Base
-
+class Footer  { 
+    
     footerDisplayed (){
         $(sel.footer).waitForDisplayed();        
     }
@@ -115,6 +115,10 @@ class Footer  { //extends Base
         assert.equal(ld, true);
     }
 
+    allumaIconDisplayed() {
+        let alluma = $(sel.allumaIcon).isDisplayed();
+        assert.equal(alluma, true);
+    }
 
 }
 

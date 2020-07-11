@@ -91,4 +91,8 @@ describe('Footer', function() {
         footer.linkedinIconDisplayed();
     })
 
+    it ('Alluma-icon-is-displayed', function(){
+        footer.allumaIconDisplayed();
+    })
+
 })

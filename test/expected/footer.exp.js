@@ -10,4 +10,6 @@ export default {
     
     colon3: 'Stay in touch',
 
+    twitterAluma: 'https://twitter.com/WeAreAlluma',
+
 } 

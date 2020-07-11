@@ -16,4 +16,10 @@ export default {
     facebookIcon: '.gg-link-icon1',
     twitterIcon: '.gg-link-icon2',
     linkedinIcon: '.gg-link-icon3',
+
+    allumaIcon: '.gg-footer-cc-img',
+
+    allumaFB:'._6tay',
+    allumaTwitter: '.css-1dbjc4n',
+    allumaLinkedin: '.org-top-card-summary__title t-24 t-black truncate',
 }
