@@ -1,0 +1,16 @@
+export default {
+    loginFormTitleConnections: '.gg-login-form-title1',
+    forgotFormTitleForgotPassword: '.gg-login-form-title2', 
+    labelTextUserName: '.gg-label-text',
+    inputUserNameField: '#Username',
+    iconInInputUsernameField: '.gg-form-input-icon',
+    linkIForgotMyUserName: 'a.gg-link',
+    cancelBtn: '.btn-label-cancel', 
+    continueBtn: '[value="ResetPassword"]',
+    forgotFormTitleTellUsYourName: '.gg-forgotpwd-msg1',
+    linkIForgotMyUserNameRedir: '#Email',
+    btnLogin: '.gg-btn',
+    errorTextFieldEmpty: '.gg-error-block li',
+    resendTheEmailLink: '[value="ResetPassword"]',
+    backToLoginBtn: '[value="BackToLogin"]',
+}

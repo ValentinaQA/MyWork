@@ -1,29 +1,33 @@
-import header from '../pages/Header.page';
+import header from '../pages/header.page';
 
 describe('Header', function() {
 
+    it ('Header-location', function(){
+        header.openBase();
+        header.headerLocation();      
+    })
+
     it ('Header-is-displayed', function(){
-        browser.url('/');
         header.headerIsDisplayed();      
     }) 
     
-    it ('Connection-btn-text', function(){
+    it ('Connection-text', function(){
         header.connectionBtnText();      
     }) 
     
-    /*it ('Eng-btn-is-displayed', function(){
+    /*it ('Header-language-English-is-displayed', function(){
         header.engBtnIsDisplayed();      
     }) 
     
-    it ('Eng-btn-text', function(){
+    it ('Eng-switcher-language-text', function(){
         header.engBtnText();      
     }) 
 
-    it ('Spanish-btn-is-displayed', function(){
+    it ('Header-language-Spanish-is-displayed', function(){
         header.espanolBtnIsDisplayed();      
     }) 
     
-    it ('Spanish-btn-text', function(){
+    it ('Spanish-switcher-language-text', function(){
         header.espanolBtnText();      
     })*/
    

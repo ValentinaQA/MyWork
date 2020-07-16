@@ -3,9 +3,8 @@ exports.config = {
     runner: 'local',
     path: '/',
     specs: [
-        //'./test/specs/*.js'
-        './test/specs/Header.test.js'
-        //'./test/specs/footer.functionality.test.js'       
+        './test/specs/*.js'       
+        //'./test/specs/forgotPassword.function.test.js'        
     ],
     
     exclude: [        
@@ -16,9 +15,9 @@ exports.config = {
         maxInstances: 1,        
         browserName: 'chrome',        
     }],
-    logLevel: 'silent',
+    logLevel: 'error',
     bail: 0,    
-    baseUrl: 'http://oxcdemo.alluma.org/',
+    baseUrl: 'http://oxcdemo.alluma.org/', 
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,

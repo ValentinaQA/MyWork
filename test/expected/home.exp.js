@@ -1,0 +1,25 @@
+export default {
+    infConnections: 'CONNECTIONS',
+    infoWelcome: 'Welcome to Connections',
+    infoConnectPeople: 'Connect people with the benefits they need, with one simple application.',
+    infoWhatYouMayQualifyFor: 'Curious what you may qualify for?',
+    infoTryScreener: 'Try our Quick Screener',
+    forgotLinkText: 'Forgot User Name or Password ?',
+    reminderPassText: 'Forgot Password',
+    loginBtnBgColor: '#6c3b96',
+    loginBtnText: 'Log In',
+    loginBtnTextColor: '#ffffff',
+    loginBtnFontSize: '16px',
+    loginBtnFont: 'lato',
+    infoifYouNeed: 'If you need a user name, contact your system administrator.',
+    infoLearnMore: 'Interested in becoming a Connections user? Learn More',
+
+    loginFormTitleTryScreenerRedirect: 'http://oxcdemo.alluma.org/#/quick/intro',
+    forgotLinkUsernameRedirect: 'https://cx-sb01-auth01.azurewebsites.net/Account/ForgotUsername?origin=https%3A%2F%2Fcx-sb01-auth01.azurewebsites.net%2FAccount%2FLogin%3FReturnUrl%3D%252Fconnect%252Fauthorize%252Fcallback%253Fclient_id%253Dggspa_cxsb01%2526scope%253Dopenid%252520intakeservice%2526response_type%253Did_token%252520token%2526response_mode%253Dform_post%2526redirect_uri%253Dhttps%25253A%25252F%25252Fcx-sb01-auth01.azurewebsites.net%25252FAccount%25252FClientRedirect%2526state%253Dhttp%25253A%25252F%25252Foxcdemo.alluma.org%2526nonce%253D8983b58b-6d9c-4a85-87df-d2db4e28c9db&clientid=ggspa',
+    forgotLinkPasswordRedirect: 'https://cx-sb01-auth01.azurewebsites.net/Account/ForgotPassword?origin=https%3A%2F%2Fcx-sb01-auth01.azurewebsites.net%2FAccount%2FLogin%3FReturnUrl%3D%252Fconnect%252Fauthorize%252Fcallback%253Fclient_id%253Dggspa_cxsb01%2526scope%253Dopenid%252520intakeservice%2526response_type%253Did_token%252520token%2526response_mode%253Dform_post%2526redirect_uri%253Dhttps%25253A%25252F%25252Fcx-sb01-auth01.azurewebsites.net%25252FAccount%25252FClientRedirect%2526state%253Dhttp%25253A%25252F%25252Foxcdemo.alluma.org%2526nonce%253D1eff3e9b-d066-40b9-9736-1a84cf10644e&clientid=ggspa',
+
+    errorTextEmptyUser: 'The Username field is required.',
+    errorTextEmptyPass: 'The Password field is required.',
+    errorIconIsDisplayed: '1',
+    maxlengthUserField: '100',
+}

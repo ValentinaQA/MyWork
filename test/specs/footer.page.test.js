@@ -3,7 +3,7 @@ import footer from '../pages/footer.page';
 describe('Footer', function() {
 
     it ('Footer-displayed', function(){
-        browser.url('/');
+        footer.openBase();
         footer.footerDisplayed();
     })
 
@@ -47,7 +47,7 @@ describe('Footer', function() {
         footer.footerColomText2();
     })
 
-    /*it ('Coloms2-phone-displayed', function(){
+    it ('Coloms2-phone-displayed', function(){
         footer.coloms2PhoneDisplayed();
     })
 
@@ -69,7 +69,7 @@ describe('Footer', function() {
 
     it ('Coloms2-fax-text', function(){
         footer.coloms2FaxText();
-    })*/
+    })
 
     it ('Footer-coloms-third-displayed', function(){
         footer.footerColomsThird();
@@ -87,12 +87,52 @@ describe('Footer', function() {
         footer.twitterIconDisplayed();
     })
 
-    it ('linkedin-icon-is-displayed', function(){
+    it ('Linkedin-icon-is-displayed', function(){
         footer.linkedinIconDisplayed();
     })
 
     it ('Alluma-icon-is-displayed', function(){
         footer.allumaIconDisplayed();
+    })
+
+    it ('App-version-displayed', function(){
+        footer.appVersionDisplayed();
+    })
+
+    it ('App-version-text', function(){
+        footer.appVersionText();
+    })
+
+    it ('Alluma-link-in-app-version-displayed', function(){
+        footer.allumaLinkInAppVersionDisplayed();
+    })
+
+    it ('Alluma-link-in-app-version-text', function(){
+        footer.allumaLinkInAppVersionText();
+    })
+
+    it ('Privacy-policy-displayed', function(){
+        footer.privacyPolicyDisplayed();
+    })
+
+    it ('Privacy-policy-text', function(){
+        footer.privacyPolicyText();
+    })
+
+    it ('Non-discrimination-policy-displayed', function(){
+        footer.nonDiscriminationPolicyDisplayed();
+    })
+
+    it ('Non-discrimination-policy-text', function(){
+        footer.nonDiscriminationPolicyText();
+    })
+
+    it ('Terms-of-use-displayed', function(){
+        footer.termsOfUseDisplayed();
+    })
+
+    it ('Terms-of-use-text', function(){
+        footer.termsOfUseText();
     })
 
 })
