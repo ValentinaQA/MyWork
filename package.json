@@ -1,11 +1,10 @@
 {
   "name": "alluma",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "npm run clean && wdio wdio.conf.js",
-    "clean": "rm -rf allure-results"    
+    "clean": "rm -rf allure-results"
   },
   "repository": {
     "type": "git",
@@ -35,5 +34,9 @@
     "@wdio/mocha-framework": "^6.2.0",
     "@wdio/spec-reporter": "^6.1.23",
     "@wdio/sync": "^6.2.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "description": ""
 }
