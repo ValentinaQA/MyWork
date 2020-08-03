@@ -3,9 +3,7 @@ exports.config = {
     runner: 'local',
     path: '/',
     specs: [
-        //'./test/specs/*.js'
-        './test/specs/Header.test.js'
-        //'./test/specs/footer.functionality.test.js'       
+        './test/specs/*.js'        
     ],
     
     exclude: [        
@@ -16,15 +14,15 @@ exports.config = {
         maxInstances: 1,        
         browserName: 'chrome',        
     }],
-    logLevel: 'silent',
+    logLevel: 'error',
     bail: 0,    
-    baseUrl: 'http://oxcdemo.alluma.org/',
+    baseUrl: 'http://oxcdemo.alluma.org/', 
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
     services: ['chromedriver'],
     framework: 'mocha',
-    reporters: ['spec',['allure', {outputDir: 'temp/allure-results'}]],
+    reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
     mochaOpts: {
         compilers: ['js:@babel/register'],
         require: ['@babel/register'],
@@ -108,12 +106,12 @@ exports.config = {
     /**
      * Function to be executed after a test (in Mocha/Jasmine).
      */
-    afterTest: function(test, context, { error, result, duration, passed, retries }) {
+    /*afterTest: function(test, context, { error, result, duration, passed, retries }) {
         if (!passed) {
             browser.saveScreenshot(`./temp/screenshots/${test.fullTitle}.png`);
             //browser.takeScreenshot();
         }
-    },
+    },*/
 
 
     /**

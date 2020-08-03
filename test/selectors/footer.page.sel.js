@@ -8,9 +8,9 @@ export default {
     colomsFirstLink2: '.gg-footer-link-a',
 
     colomsSecond: '.gg-footer-hdr2',
-    colom2str1: '.gg-footer-link gg-footer-link3', //phone number
-    colom2str2: '.gg-footer-link gg-footer-link4 gg-footer-link-a', // mail
-    colom2str3: '.gg-footer-link gg-footer-link5', //fax
+    colom2str1: 'div > .gg-footer-link.gg-footer-link3', //phone number
+    colom2str2: '.gg-footer-links > a', // mail
+    colom2str3: 'div > .gg-footer-link.gg-footer-link5', //fax
 
     colomsThird: '.gg-footer-hdr3',
     facebookIcon: '.gg-link-icon1',
@@ -21,5 +21,12 @@ export default {
 
     allumaFB:'._6tay',
     allumaTwitter: '.css-1dbjc4n',
-    allumaLinkedin: '.org-top-card-summary__title t-24 t-black truncate',
+    allumaLinkedin: '#inbug-nav-item',
+
+    allumaOrg: '#logo',
+    appVersion: '.gg-footer-cc span', //[0] element or '.gg-footer-cc span:nth-child(1)',
+    allumaLincInAppVersion: '.gg-footer-cc-text > a',
+    privacyPolicy: '.gg-footer-cc span', // [2]  //'.gg-footer-cc span:nth-child(4)',
+    nonDiscriminationPolicy: '.gg-footer-cc span', // [4] //'.gg-footer-cc span:nth-child(6)',
+    termsOfUse: '.gg-footer-cc span', // [6] //'.gg-footer-cc span:nth-child(8)', //
 }

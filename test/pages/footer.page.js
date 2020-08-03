@@ -1,9 +1,10 @@
 import sel from '../selectors/footer.page.sel';
 import exp from '../expected/footer.exp';
 import { assert } from 'chai';
+import Base from './Base';
 
 
-class Footer  { 
+class Footer extends Base { 
     
     footerDisplayed (){
         $(sel.footer).waitForDisplayed();        
@@ -66,7 +67,7 @@ class Footer  {
     }
 
     coloms2PhoneText() {
-        let phone1 = $(sel.colom2str1).isDisplayed();
+        let phone1 = $(sel.colom2str1).getText();
         assert.equal(phone1, exp.phoneSuport);
     }
 
@@ -76,7 +77,7 @@ class Footer  {
     }
 
     coloms2EmailText() {
-        let email1 = $$(sel.colom2str2)[0].isDisplayed();
+        let email1 = $$(sel.colom2str2)[0].getText();
         assert.equal(email1, exp.mailSuport);
     }
 
@@ -86,7 +87,7 @@ class Footer  {
     }
 
     coloms2FaxText() {
-        let fax1 = $(sel.colom2str3).isDisplayed();
+        let fax1 = $(sel.colom2str3).getText();
         assert.equal(fax1, exp.faxSuport);
     }
 
@@ -120,6 +121,54 @@ class Footer  {
         assert.equal(alluma, true);
     }
 
-}
+    appVersionDisplayed() {
+        let app = $$(sel.appVersion)[0].isDisplayed();
+        assert.equal(app, true);
+    }
 
+    appVersionText() {
+        let appT = $$(sel.appVersion)[0].getText();
+        assert.equal(appT, exp.appVersion);
+    }
+
+    allumaLinkInAppVersionDisplayed() {
+        let appL = $(sel.allumaLincInAppVersion).isDisplayed();
+        assert.equal(appL, true);
+    }
+
+    allumaLinkInAppVersionText() {
+        let appL1 = $(sel.allumaLincInAppVersion).getText();
+        assert.equal(appL1, exp.allumaLinkAppVertionText);
+    }
+
+    privacyPolicyDisplayed() {
+        let pol = $$(sel.privacyPolicy)[2].isDisplayed();
+        assert.equal(pol, true);
+    }
+
+    privacyPolicyText() {
+        let pol1 = $$(sel.privacyPolicy)[2].getText();
+        assert.equal(pol1, exp.privacyPolicyText);
+    }
+
+    nonDiscriminationPolicyDisplayed() {
+        let pol2 = $$(sel.nonDiscriminationPolicy)[4].isDisplayed();
+        assert.equal(pol2, true);
+    }
+
+    nonDiscriminationPolicyText() {
+        let pol3 = $$(sel.nonDiscriminationPolicy)[4].getText();
+        assert.equal(pol3, exp.nonDiscriminationPolicyText);
+    }
+
+    termsOfUseDisplayed() {
+        let term = $$(sel.termsOfUse)[6].isDisplayed();
+        assert.equal(term, true);
+    }
+
+    termsOfUseText() {
+        let term1 = $$(sel.termsOfUse)[6].getText();
+        assert.equal(term1, exp.termsOfUseText);
+    }
+}
 export default new Footer(); 

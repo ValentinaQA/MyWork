@@ -9,7 +9,14 @@ export default {
     faxSuport: 'Fax: 777-777-7777',
     
     colon3: 'Stay in touch',
-
-    twitterAluma: 'https://twitter.com/WeAreAlluma',
-
+    emailAddressRedirect: 'mailto:support@email.com',
+    faceboolRedirect: 'https://www.facebook.com/WeAreAlluma/?ref=page_internal',
+    twitterRedirect: 'https://twitter.com/WeAreAlluma',
+    limkedineRedirect: 'https://www.linkedin.com/company/we-are-alluma/',
+    allumaRedirect: 'https://www.alluma.org/',
+    appVersion: 'Copyright 2019',
+    allumaLinkAppVertionText: 'Alluma',
+    privacyPolicyText: 'Privacy Policy',
+    nonDiscriminationPolicyText: 'Non-discrimination Policy',
+    termsOfUseText: 'Terms of Use',
 } 
