@@ -50,7 +50,6 @@ describe('HomeDisplayed', function () {
     it('Password-field-displayed', function () {
         home.passFieldDisplayed();
     })
-
     it('Password-field-icon-displayed', function () {
         home.passFieldIconDisplayed();
     })

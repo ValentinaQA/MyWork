@@ -1,4 +1,3 @@
-
 import { assert } from 'chai';
 import Base from './Base';
 import sel from '../selectors/home.sel';

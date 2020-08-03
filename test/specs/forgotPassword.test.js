@@ -37,11 +37,11 @@ describe('ForgotPasswordDisplayed', function () {
 
     it('Cancel-Btn-is-displayed', function () {
         forgetP.cancelBtnText();
-    })    
+    })
 
     it('Continue-Btn-is-displayed', function () {
         forgetP.continueBtnDisplayed();
-    })    
+    })
 })
 
 describe('ForgotPasswordDisplayed', function () {
@@ -82,7 +82,7 @@ describe('ForgotFunctionality', function () {
         forgotF.linkIForgotMyUserNameClickable();
     })
 
-    it('Link-I-forgot-my-Password-Redirect', function () { 
+    it('Link-I-forgot-my-Password-Redirect', function () {
         forgotF.linkIForgotMyPasswordRedirect();
     })
 

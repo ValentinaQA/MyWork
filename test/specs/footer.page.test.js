@@ -55,6 +55,10 @@ describe('FooterDisplayed', function () {
         footer.twitterIconDisplayed();
     })
 
+    it('Coloms2-phone-displayed', function () {
+        footer.coloms2PhoneDisplayed();
+    })
+
     it('Linkedin-icon-is-displayed', function () {
         footer.linkedinIconDisplayed();
     })
