@@ -1,28 +1,28 @@
 exports.config = {
-    
+
     runner: 'local',
     path: '/',
     specs: [
-        './test/specs/*.js'        
+        './test/specs/home.page.test.js'
     ],
-    
-    exclude: [        
+
+    exclude: [
     ],
-    
-    maxInstances: 10,    
-    capabilities: [{    
-        maxInstances: 1,        
-        browserName: 'chrome',        
+
+    maxInstances: 10,
+    capabilities: [{
+        maxInstances: 1,
+        browserName: 'chrome',
     }],
     logLevel: 'error',
-    bail: 0,    
-    baseUrl: 'http://oxcdemo.alluma.org/', 
+    bail: 0,
+    baseUrl: 'http://oxcdemo.alluma.org/',
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
     services: ['chromedriver'],
     framework: 'mocha',
-    reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
+    reporters: ['spec', ['allure', { outputDir: 'allure-results' }]],
     mochaOpts: {
         compilers: ['js:@babel/register'],
         require: ['@babel/register'],

@@ -177,10 +177,6 @@ describe('FooterFunctionality', function () {
         footerF.linkedinIconIsClickable();
     })
 
-    /*it ('Linkedin-icon-redirect', function(){       
-        footerF.linkedinIconRedirect();
-    })*/
-
     it('Alluma-icon-is-clickable', function () {
         footerF.allumaIconIsClickable();
     })

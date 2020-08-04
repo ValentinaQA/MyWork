@@ -109,31 +109,10 @@ class Home extends Base {
         assert.equal(btnLogin, true);
     }
 
-    loginBtnBgColor() {
-        let elem = $(sel.btnLogin).getCSSProperty('background-color').parsed.hex;
-        assert.equal(elem, exp.loginBtnBgColor);
-    }
-
     loginBtnText() {
         let textHTML = $(sel.btnLogin).getText();
         assert.equal(textHTML, exp.loginBtnText);
-    }
-
-    loginBtnTextColor() {
-        let elem = $(sel.btnLogin).getCSSProperty('color').parsed.hex;
-        assert.equal(elem, exp.loginBtnTextColor);
-    }
-    
-
-    loginBtnFontSize() {
-        let fontSize = $(sel.btnLogin).getCSSProperty('font-size').value;
-        assert.equal(fontSize, exp.loginBtnFontSize);
-    }
-
-    loginBtnFont() {
-        let fontSize = $(sel.btnLogin).getCSSProperty('font-family').value;
-        assert.equal(fontSize, exp.loginBtnFont);
-    }
+    } 
 
     loginFormTitleIfYouNeedDisplayed() {
         let info = $$(sel.infoifYouNeed)[0].isDisplayed();

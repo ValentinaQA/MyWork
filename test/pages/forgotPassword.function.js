@@ -48,7 +48,6 @@ class ForgotPassFunctionality extends Base {
         assert.equal(btnRedir1, true);  
         $(sel.backToLoginBtn).click();
         this.forgotLinkPasswordRedirect();
-        //this.clearInputField($(sel.inputUserNameField));
     }
 
     userNameFieldMaxLength() {
