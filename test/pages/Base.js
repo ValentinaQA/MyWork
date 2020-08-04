@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import loginSel from '../selectors/login.sel';
+import loginSel from '../selectors/base.sel';
 import homeSel from '../selectors/home.sel';
 import forgotSel from '../selectors/forgotUsername.sel';
 import ForgotSelP from '../selectors/forgotPassword.sel';

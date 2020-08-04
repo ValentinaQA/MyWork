@@ -1,5 +1,4 @@
 import footer from '../pages/footer.page';
-import footerF from '../pages/footer.functionality';
 
 describe('FooterDisplayed', function () {
 
@@ -146,66 +145,66 @@ describe('FooterText', function () {
 describe('FooterFunctionality', function () {
 
     it('SiteLink1-is-clickable', function () {
-        footerF.siteLink1IsClickable();
+        footer.siteLink1IsClickable();
     })
 
     it('SiteLink2-is-clickable', function () {
-        footerF.siteLink2IsClickable();
+        footer.siteLink2IsClickable();
     })
 
     it('Email-address-is-clickable', function () {
-        footerF.emailAddressIsClickable();
+        footer.emailAddressIsClickable();
     })
 
     it('Facebook-icon-is-clickable', function () {
-        footerF.facebookIconIsClickable();
+        footer.facebookIconIsClickable();
     })
 
     it('Facebook-icon-redirect', function () {
-        footerF.facebookIconRedirect();
+        footer.facebookIconRedirect();
     })
 
     it('Twitter-icon-is-clickable', function () {
-        footerF.twitterIconIsClickable();
+        footer.twitterIconIsClickable();
     })
 
     it('Twitter-icon-redirect', function () {
-        footerF.twitterIconRedirect();
+        footer.twitterIconRedirect();
     })
 
     it('Linkedin-icon-is-clickable', function () {
-        footerF.linkedinIconIsClickable();
+        footer.linkedinIconIsClickable();
     })
 
     it('Alluma-icon-is-clickable', function () {
-        footerF.allumaIconIsClickable();
+        footer.allumaIconIsClickable();
     })
 
     it('Alluma-icon-redirect', function () {
-        footerF.allumaIconRedirect();
+        footer.allumaIconRedirect();
     })
 
     it('App-version-is-clickable', function () {
-        footerF.appVersionClickable();
+        footer.appVersionClickable();
     })
 
     it('Alluma-link-in-app-version-is-clickable', function () {
-        footerF.allumaLinkInAppVersionClickable();
+        footer.allumaLinkInAppVersionClickable();
     })
 
     it('Alluma-link-in-app-version-is-redirect', function () {
-        footerF.allumaLinkInAppVersionRedirect();
+        footer.allumaLinkInAppVersionRedirect();
     })
 
     it('Privacy-policy-is-clickable', function () {
-        footerF.privacyPolicyClickable();
+        footer.privacyPolicyClickable();
     })
 
     it('Non-discrimination-policy-is-clickable', function () {
-        footerF.nonDiscriminationPolicyClickable();
+        footer.nonDiscriminationPolicyClickable();
     })
 
     it('Terms-of-use-is-clickable', function () {
-        footerF.termsOfUseClickable();
+        footer.termsOfUseClickable();
     })
 })

@@ -1,5 +1,4 @@
 import forget from '../pages/forgotUsername.page';
-import forgotF from '../pages/forgotUsername.function';
 
 describe('ForgotUserNameDisplayed', function () {
 
@@ -78,44 +77,44 @@ describe('ForgotUserNameText', function () {
 describe('ForgotFunctionality', function () {
 
     it('Link-I-forgot-my-Password-isClickable', function () {
-        forgotF.linkIForgotMyPasswordClickable();
+        forget.linkIForgotMyPasswordClickable();
     })
 
     it('Link-I-forgot-my-Password-Redirect', function () {
-        forgotF.linkIForgotMyPasswordRedirect();
+        forget.linkIForgotMyPasswordRedirect();
     })
 
     it('BackToLogin-btn-isClickable', function () {
-        forgotF.backToLoginBtnIsClickable();
+        forget.backToLoginBtnIsClickable();
     })
 
     it('BackToLogin-btn-isRedirect', function () {
-        forgotF.backToLoginBtnIsRedirect();
+        forget.backToLoginBtnIsRedirect();
     })
 
     it('RecoverUsername-btn-isClickable', function () {
-        forgotF.recoverUsernameBtnIsClickable();
+        forget.recoverUsernameBtnIsClickable();
     })
 
     it('Email-field-not-accept-201', function () {
-        forgotF.emailFieldMaxLength();
+        forget.emailFieldMaxLength();
     })
 
     it('Email-field-accept-200', function () {
-        forgotF.emailFieldMaxNegattive();
+        forget.emailFieldMaxNegattive();
     })
 
     it('Error-email-field-empty', function () {
-        forgotF.errorEmailFieldEmpty();
+        forget.errorEmailFieldEmpty();
     })
 
     it('Error-text-email-field-empty', function () {
-        forgotF.errorTextEmailFieldEmpty();
+        forget.errorTextEmailFieldEmpty();
     })
 
     it('Email-not-exist-message-display', function () {
-        forgotF.inputWrongEmail();
-        forgotF.clickRecoverUsernameBtn();
-        forgotF.errorTextDisplayed();
+        forget.inputWrongEmail();
+        forget.clickRecoverUsernameBtn();
+        forget.errorTextDisplayed();
     })
 })

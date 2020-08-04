@@ -1,5 +1,4 @@
 import home from '../pages/home.page';
-import homeF from '../pages/home.functionality';
 
 describe('HomeDisplayed', function () {
 
@@ -113,66 +112,65 @@ describe('HomeText', function () {
 describe('HomeFunctionality', function () {
 
     it('Login-form-title-try-screener-clickable', function () {
-        homeF.loginFormTitleTryScreenerClickable();
+        home.loginFormTitleTryScreenerClickable();
     })
 
     it('Login-form-title-try-screener-redirect', function () {
-        homeF.openBase();
-        homeF.loginFormTitleTryScreenerRedirect();
+        home.openBase();
+        home.loginFormTitleTryScreenerRedirect();
     })
 
     it('Forgot-link-username-clickable', function () {
-        homeF.forgotLinkUsernameClickable();
+        home.forgotLinkUsernameClickable();
     })
 
     it('Forgot-link-username-redirect', function () {
-        homeF.forgotLinkUserRedirect();
+        home.forgotLinkUserRedirect();
     })
 
     it('Forgot-link-password-clickable', function () {
-        homeF.openBase();
-        homeF.forgotLinkPasswordClickable();
+        home.openBase();
+        home.forgotLinkPasswordClickable();
     })
 
     it('Forgot-link-password-redirect', function () {
-        homeF.openBase();
-        homeF.forgotLinkPassRedirect();
+        home.openBase();
+        home.forgotLinkPassRedirect();
     })
 
     it('Login-btn-is-clickable', function () {
-        homeF.loginBtnClickable();
+        home.loginBtnClickable();
     })
 
     it('Username-field-max-length', function () {
-        homeF.userNameFieldMax();
+        home.userNameFieldMax();
     })
 
     it('Error-both-fields-is-empty-displayed', function () {
-        homeF.errorBothFieldsEmpty();
+        home.errorBothFieldsEmpty();
     })
 
     it('Error-text-both-fields-is-empty', function () {
-        homeF.errorTextBothField();
+        home.errorTextBothField();
     })
 
     it('Error-icon-is-displayed', function () {
-        homeF.errorIconIsDisplayed();
+        home.errorIconIsDisplayed();
     })
 
     it('Error-password-field-is-empty-displayed', function () {
-        homeF.errorPassFieldEmpty();
+        home.errorPassFieldEmpty();
     })
 
     it('Error-text-password-field-is-empty', function () {
-        homeF.errorTextPassFieldEmpty();
+        home.errorTextPassFieldEmpty();
     })
 
     it('Error-username-field-is-empty-displayed', function () {
-        homeF.errorUserFieldEmpty();
+        home.errorUserFieldEmpty();
     })
 
     it('Error-text-username-field-is-empty', function () {
-        homeF.errorTextUserFieldEmpty();
+        home.errorTextUserFieldEmpty();
     })
-
 })

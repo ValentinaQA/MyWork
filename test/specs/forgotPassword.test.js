@@ -1,5 +1,4 @@
 import forgetP from '../pages/forgotPassword.page';
-import forgotF from '../pages/forgotPassword.function';
 
 describe('ForgotPasswordDisplayed', function () {
 
@@ -79,42 +78,42 @@ describe('ForgotPasswordDisplayed', function () {
 describe('ForgotFunctionality', function () {
 
     it('Link-I-forgot-my-UserName-isClickable', function () {
-        forgotF.linkIForgotMyUserNameClickable();
+        forgetP.linkIForgotMyUserNameClickable();
     })
 
     it('Link-I-forgot-my-Password-Redirect', function () {
-        forgotF.linkIForgotMyPasswordRedirect();
+        forgetP.linkIForgotMyPasswordRedirect();
     })
 
     it('Cancel-btn-isClickable', function () {
-        forgotF.cancelBtnIsClickable();
+        forgetP.cancelBtnIsClickable();
     })
 
     it('Cancel-btn-isRedirect', function () {
-        forgotF.cancelBtnIsRedirect();
+        forgetP.cancelBtnIsRedirect();
     })
 
     it('Continue-btn-isClickable', function () {
-        forgotF.continueBtnIsClickable();
+        forgetP.continueBtnIsClickable();
     })
 
     it('Continue-btn-isRedirect', function () {
-        forgotF.continueBtnIsRedirect();
+        forgetP.continueBtnIsRedirect();
     })
 
     it('UserName-field-not-accept-201', function () {
-        forgotF.userNameFieldMaxLength();
+        forgetP.userNameFieldMaxLength();
     })
 
     it('UserName-field-accept-200', function () {
-        forgotF.userNameFieldMaxNegattive();
+        forgetP.userNameFieldMaxNegattive();
     })
 
     it('Error-UserName-field-empty', function () {
-        forgotF.errorUserNameFieldEmpty();
+        forgetP.errorUserNameFieldEmpty();
     })
 
     it('Error-text-UserName-field-empty', function () {
-        forgotF.errorTextUserNameFieldEmpty();
+        forgetP.errorTextUserNameFieldEmpty();
     })
 })
